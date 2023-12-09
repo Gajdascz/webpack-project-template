@@ -11,6 +11,9 @@
     "pushDistToPages": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
