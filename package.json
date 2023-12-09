@@ -5,10 +5,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack/webpack.prod.js",
-    "startDev": "webpack serve --open --config webpack/webpack.dev.js",
-    "startProd": "webpack serve --open --config webpack/webpack.prod.js",
-    "pushDistToPages": "git subtree push --prefix dist origin gh-pages"
+    "buildProd": "webpack --config webpack/webpack.prod.js",
+    "buildProd:transpile": "USE_BABEL=true webpack --config webpack/webpack.prod.js",
+    "serveDev": "webpack serve --open --config webpack/webpack.dev.js",
+    "pushDistToPages": "git subtree push --prefix dist origin gh-pages",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@babel/core": "^7.23.5",
