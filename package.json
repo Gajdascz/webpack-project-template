@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "vitest",
     "buildProd": "webpack --config webpack/webpack.prod.js",
     "buildProd:transpile": "USE_BABEL=true webpack --config webpack/webpack.prod.js",
     "serveDev": "webpack serve --open --config webpack/webpack.dev.js",
@@ -24,6 +25,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
+    "vitest": "^1.1.0",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
